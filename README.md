@@ -33,8 +33,8 @@ sudo sed -i '$asubnet 192.168.50.0 netmask 255.255.255.0 {' /etc/dhcp/dhcpd.conf
 sudo sed -i '$arange 192.168.50.30 192.168.50.100 {' /etc/dhcp/dhcpd.conf
 sudo sed -i '$aoption routers 192.168.50.1;' /etc/dhcp/dhcpd.conf
 ```
-Der Server befindet sich in der Domain "test.local"  
-Als DNS wird der Google DNS Server mit der IP Adresse 8.8.8.8 verwendet  
-Er befindet sich im Netz 192.168.50.0 mit dem Suffix /24  
-Sein Range erstreckt sich von 192.168.50.30 bis 192.168.50.100  
-Als Gateway wird 192.168.50.1 verwendet  
+Der Server befindet sich in der Domain **"test.local"**  
+Als DNS wird der Google DNS Server mit der IP Adresse **8.8.8.8** verwendet  
+Er befindet sich im Netz **192.168.50.0** mit dem Suffix **/24**  
+Sein Range erstreckt sich von **192.168.50.30 bis 192.168.50.100**  
+Als Gateway wird **192.168.50.1** verwendet  
