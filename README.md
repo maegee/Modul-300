@@ -1,7 +1,7 @@
-# Beschreibung
+## Beschreibung
 Mit Hilfe des folgenden Skripts wird eine virtuelle Maschine mit einem DHCP-Dienst aufgesetzt.
 
-# Spezifikationen
+## Spezifikationen
 IP = 192.168.50.10  
 Hostname = M300_dhcp  
 RAM = 1024 MB  
@@ -18,7 +18,7 @@ config.vm.define "dhcp" do |dhcp|
 	  vb.memory = "1024"    
 end
 ```
-# Konfiguration
+## Konfiguration
 Im ersten Schritt muss das Paketverzeichnis installiert werden. Dazu führt man zuerst ein Update aus. Sobald das fertig ist kann man mit der Installation von DHCP beginnen:
 ```
 sudo apt-get update
@@ -43,3 +43,17 @@ Nach diesen Einstellungen sollte der Service neu gestartet werden:
 ```
 sudo service isc-dhcp-server restart
 ```
+Für das richtige Tastaturlayout wurde folgender Befehl verwendet:
+```
+sudo sed -i 's/XKBLAYOUT="us"/XKBLAYOUT="ch"/g' /etc/default/locale
+```
+## Zugriff mit SSH
+Für den Zugriff via SSH muss auf der Firewall der Port 22 freigegeben werden. Mit folgendem Befehl  
+wird eine Ausnahme für die IP Adresse 10.0.2.2 hinzugefügt:
+```
+sudo apt-egt -y install ufw gufw
+sudo ufw allow from 10.0.2.2 to any port 22
+sudo ufw --force enable
+```
+## Aufsetzen
+Nachdem die Umgebung mit "vagrant init" initialisiert wurde, kann die VM mit "vagrant up" aufgesetzt werden.
