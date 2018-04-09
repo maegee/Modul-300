@@ -38,3 +38,8 @@ Als DNS wird der Google DNS Server mit der IP Adresse **8.8.8.8** verwendet
 Er befindet sich im Netz **192.168.50.0** mit dem Suffix **/24**  
 Sein Range erstreckt sich von **192.168.50.30 bis 192.168.50.100**  
 Als Gateway wird **192.168.50.1** verwendet  
+  
+Nach diesen Einstellungen sollte der Service neu gestartet werden:
+```
+sudo service isc-dhcp-server restart
+```
