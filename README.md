@@ -59,5 +59,5 @@ sudo ufw --force enable
 Nachdem die Umgebung mit **"vagrant init"** initialisiert wurde, kann die VM mit **"vagrant up"** aufgesetzt werden.
 
 ## Key für SHH Zugriff
-Dieser Public Key wurde für den Zugriff hinterlegt:
+Dieser Public Key wurde für den Zugriff hinterlegt:  
 ```ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABAQDrR/4LtNGhRAmWWFdxZ6a/0A4tZzOWx2xjAF1fzKYvx23HaZ/H3zrhdtCMybkIDCPMxBjaXN0/GRte32NiZXi/lTK8jBsEHTsj3ZJXXEj5/bZKX7Spduph0bJUX8daY6vBn2gRoxWqOyxrYy4UaScKAvFjPd5kcF/yvtvVZkuG/bHycjf//IlVHPmlrCWiGf+FhHy5Id/C25W1I7ZrmWg0qzBdw5DynAM/OX6luiYPpVkBXGKQ/D6U7+LccJEIG6XZtlNVcwTqISSKU/2zf7BueDGtrFX4WrdiFv8cV+Mesr9jweXSWH1e5kzezUVxOuxN87Cg0VGgbj0P4rTMZs7X Marc@maegee```
